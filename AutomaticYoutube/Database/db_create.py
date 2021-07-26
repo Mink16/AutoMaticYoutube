@@ -25,6 +25,7 @@ data = [
   ('tiktok', 'コメディー部門', 0, '20201213'),
   ('tiktok', 'バスれ', 0, '20201213'),
 ]
+
 cursor.executemany('INSERT INTO search(site_type, word, download_count, last_update) VALUES(?, ?, ?, ?)', data)
 
 cursor.executescript("""
